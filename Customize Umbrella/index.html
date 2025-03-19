@@ -1,0 +1,32 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Umbrella Customizer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Customize Your Umbrella</h1>
+    <div class="color-options">
+        <button style="background: pink;" onclick="changeColor('pink')">Pink</button>
+        <button style="background: blue; color: white;" onclick="changeColor('blue')">Blue</button>
+        <button style="background: yellow;" onclick="changeColor('yellow')">Yellow</button>
+    </div>
+    <div class="container">
+        <div class="umbrella">
+            <img id="umbrellaImage" src="assets/pink-umbrella.png" alt="Umbrella" width="300">
+            <img id="logoImage" class="logo" src="" alt="Logo Preview">
+        </div>
+        <!-- <div id="loader" class="loader" style="display: none;"></div> -->
+        <img id="loader" class="loader" src="assets/loader_icon.svg" alt="Loading..." style="display: none;">
+        <label for="logoUpload" class="upload-label">
+            <img src="assets/upload_icon.svg" alt="Upload Icon" class="upload-icon">
+            Upload Logo
+        </label>
+        <input type="file" id="logoUpload" accept="image/*" onchange="uploadLogo(event)">
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

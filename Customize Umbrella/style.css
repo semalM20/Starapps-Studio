@@ -1,0 +1,71 @@
+/* style.css */
+body {
+    text-align: center;
+    font-family: Arial, sans-serif;
+    transition: background 0.3s ease;
+}
+
+.container {
+    margin-top: 20px;
+    position: relative;
+}
+
+.umbrella {
+    position: relative;
+    display: inline-block;
+}
+
+.logo {
+    position: absolute;
+    bottom: 15%;
+    left: 50%;
+    transform: translateX(-50%);
+    max-width: 100px;
+    max-height: 100px;
+    display: none;
+}
+
+.loader {
+    display: none;
+    width: 50px;
+    height: 50px;
+    animation: spin 1s linear infinite;
+    margin-top: 20px;
+    margin-left: 45rem;
+    margin-bottom: 5rem;
+    border: 5px solid transparent;
+    border-top-color: pink;
+    border-radius: 50%;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.upload-label {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    background: #ddd;
+    padding: 10px;
+    border-radius: 5px;
+    width: 150px;
+    margin: 10px auto;
+}
+
+.upload-icon {
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+}
+
+#logoUpload {
+    display: none;
+}
